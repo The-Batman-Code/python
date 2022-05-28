@@ -2,6 +2,7 @@ import random
 import os
 cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
 cards2 = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
+cards3 = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
 
 
 def clear_scr():
@@ -74,6 +75,8 @@ def again():
  / / / / / /  __/_____/ /_/ / /_/ / /_/ / / / / / /_/ / / / /_____/ /___/ /_/ / /_/ /  __/
 /_/ /_/ /_/\___/     /_____/\__,_/\__/_/ /_/ /_/\__,_/_/ /_/      \____/\____/\__,_/\___/                      ''')
         main()
+        cards = cards3
+        cards2 = cards3
     elif(choice == 'no' or choice == 'n'):
         print('Glad to meet you. See you again😊')
         exit()
