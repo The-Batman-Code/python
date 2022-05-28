@@ -99,7 +99,6 @@ def main():
         "Type 'y/yes' to get another card or type 'n/no' to pass: ").lower()
     while (choice != 'yes' and choice != 'y' and choice != 'no' and choice != 'n'):
         choice = input('Enter choice again: ').lower()
-
     if (choice == 'yes' or choice == 'y'):
         while (choice == 'yes' or choice == 'y'):
             user_score = add_card_user(user_score)
@@ -108,23 +107,26 @@ def main():
                 user_score.append(1)
                 cards2.remove(11)
                 cards2.append(1)
-                final()
-            if (add(user_score) > 21):
-                final()
-                print('You went over...lol. You lose🤣🤣')
-                again()
-            if (add(user_score) == 21):
-                final()
-                print('You win, well done👍')
-                again()
-            else:
                 print(
                     f"Your cards: {user_score}, current score: {sum(user_score)}")
                 print(f"Computer's first card: {computer_score[0]}")
                 choice = input(
                     "Type 'y/yes' to get another card or type 'n/no' to pass: ").lower()
-            while (choice != 'yes' and choice != 'y' and choice != 'no' and choice != 'n'):
-                choice = input('Enter choice again: ').lower()
+                while (choice != 'yes' and choice != 'y' and choice != 'no' and choice != 'n'):
+                    choice = input('Enter choice again: ').lower()
+            elif (add(user_score) > 21):
+                final()
+                print('You went over...lol. You lose🤣🤣')
+                again()
+            elif (add(user_score) == 21):
+                final()
+                print('You win, well done👍')
+                again()
+            else:
+                choice = input(
+                    "Type 'y/yes' to get another card or type 'n/no' to pass: ").lower()
+                while (choice != 'yes' and choice != 'y' and choice != 'no' and choice != 'n'):
+                    choice = input('Enter choice again: ').lower()
     if (choice == 'no' or choice == 'n'):
         while (add(computer_score) < 17):
             computer_score = add_card_computer(computer_score)
