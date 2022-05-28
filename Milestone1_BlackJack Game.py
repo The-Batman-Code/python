@@ -123,6 +123,9 @@ def main():
                 print('You win, well done👍')
                 again()
             else:
+                print(
+                    f"Your cards: {user_score}, current score: {sum(user_score)}")
+                print(f"Computer's first card: {computer_score[0]}")
                 choice = input(
                     "Type 'y/yes' to get another card or type 'n/no' to pass: ").lower()
                 while (choice != 'yes' and choice != 'y' and choice != 'no' and choice != 'n'):
