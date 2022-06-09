@@ -352,20 +352,20 @@ def random_index():
 
 
 def question(index):
-    return f"{data.data[index]['name']}, {data.data[index]['description']}, {data.data[index]['country']}"
+    return f"{data[index]['name']}, {data[index]['description']}, {data[index]['country']}"
 
 
 def main():
     choice = input('Who has more instagram followers? Type A or B: ').lower()
     while choice != 'a' and choice != 'b':
         choice = input('Enter correct choice: ').lower()
-    if data.data[index_A]['follower_count'] > data.data[index_B]['follower_count'] and choice == 'a':
+    if data[index_A]['follower_count'] > data[index_B]['follower_count'] and choice == 'a':
         correct()
-    elif data.data[index_A]['follower_count'] > data.data[index_B]['follower_count'] and choice == 'b':
+    elif data[index_A]['follower_count'] > data[index_B]['follower_count'] and choice == 'b':
         print('Wrong. You Lose😉')
-    elif data.data[index_A]['follower_count'] < data.data[index_B]['follower_count'] and choice == 'a':
+    elif data[index_A]['follower_count'] < data[index_B]['follower_count'] and choice == 'a':
         print('Wrong. You Lose😉')
-    elif data.data[index_A]['follower_count'] < data.data[index_B]['follower_count'] and choice == 'b':
+    elif data[index_A]['follower_count'] < data[index_B]['follower_count'] and choice == 'b':
         correct()
 
 
@@ -396,11 +396,11 @@ print(f'Against B: {question(index_B)}')
 choice = input('Who has more instagram followers? Type A or B: ').lower()
 while choice != 'a' and choice != 'b':
     choice = input('Enter correct choice: ').lower()
-if data.data[index_A]['follower_count'] > data.data[index_B]['follower_count'] and choice == 'a':
+if data[index_A]['follower_count'] > data[index_B]['follower_count'] and choice == 'a':
     correct()
-elif data.data[index_A]['follower_count'] > data.data[index_B]['follower_count'] and choice == 'b':
+elif data[index_A]['follower_count'] > data[index_B]['follower_count'] and choice == 'b':
     print('Wrong. You Lose😉')
-elif data.data[index_A]['follower_count'] < data.data[index_B]['follower_count'] and choice == 'a':
+elif data[index_A]['follower_count'] < data[index_B]['follower_count'] and choice == 'a':
     print('Wrong. You Lose😉')
-elif data.data[index_A]['follower_count'] < data.data[index_B]['follower_count'] and choice == 'b':
+elif data[index_A]['follower_count'] < data[index_B]['follower_count'] and choice == 'b':
     correct()
