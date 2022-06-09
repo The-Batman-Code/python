@@ -1,6 +1,5 @@
 import random
 import os
-import data  # import data file placed in python repository
 logo = """
     __  ___       __             
    / / / (_)___ _/ /_  ___  _____
