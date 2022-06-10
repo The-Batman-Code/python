@@ -91,48 +91,48 @@ def money():
 
 
 def espresso():
-    resources['water'] = resources['water'] - \
-        MENU['espresso']['ingredients']['water']
-    resources['coffee'] = resources['coffee'] - \
-        MENU['espresso']['ingredients']['coffee']
     if total < MENU['espresso']['cost']:
         print('Not enough money. Money Returned')
         main()
     else:
         print(
             f"The change is ${round(total-MENU['espresso']['cost'],2)}\nEnjoy your coffee☕")
+        resources['water'] = resources['water'] - \
+            MENU['espresso']['ingredients']['water']
+        resources['coffee'] = resources['coffee'] - \
+            MENU['espresso']['ingredients']['coffee']
         main()
 
 
 def latte():
-    resources['water'] = resources['water'] - \
-        MENU['latte']['ingredients']['water']
-    resources['milk'] = resources['milk'] - \
-        MENU['latte']['ingredients']['milk']
-    resources['coffee'] = resources['coffee'] - \
-        MENU['latte']['ingredients']['coffee']
     if total < MENU['latte']['cost']:
         print('Not enough money. Money Returned')
         main()
     else:
         print(
             f'The change is ${round(total-MENU["latte"]["cost"],2)}\nEnjoy your coffee☕')
+        resources['water'] = resources['water'] - \
+            MENU['latte']['ingredients']['water']
+        resources['milk'] = resources['milk'] - \
+            MENU['latte']['ingredients']['milk']
+        resources['coffee'] = resources['coffee'] - \
+            MENU['latte']['ingredients']['coffee']
         main()
 
 
 def cappuccino():
-    resources['water'] = resources['water'] - \
-        MENU['cappuccino']['ingredients']['water']
-    resources['milk'] = resources['milk'] - \
-        MENU['cappuccino']['ingredients']['milk']
-    resources['coffee'] = resources['coffee'] - \
-        MENU['cappuccino']['ingredients']['coffee']
     if total < MENU['cappuccino']['cost']:
         print('Not enough money. Money Returned')
         main()
     else:
         print(
             f'The change is ${round(total-MENU["cappuccino"]["cost"],2)}\nEnjoy your coffee☕')
+        resources['water'] = resources['water'] - \
+            MENU['cappuccino']['ingredients']['water']
+        resources['milk'] = resources['milk'] - \
+            MENU['cappuccino']['ingredients']['milk']
+        resources['coffee'] = resources['coffee'] - \
+            MENU['cappuccino']['ingredients']['coffee']
         main()
 
 
