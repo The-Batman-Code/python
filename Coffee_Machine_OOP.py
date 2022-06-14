@@ -1,8 +1,6 @@
 from menu import Menu  # import menu.py from python repository
-# import coffee_maker.py from python repository
-from coffee_maker import CoffeeMaker
-# import money_machine.py from python repository
-from money_machine import MoneyMachine
+from coffee_maker import CoffeeMaker # import coffee_maker.py from python repository
+from money_machine import MoneyMachine # import money_machine.py from python repository
 money_machine = MoneyMachine()
 coffee_maker = CoffeeMaker()
 menu = Menu()
